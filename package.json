@@ -6,18 +6,17 @@
   "scripts": {
     "start": "HOST=0.0.0.0 nuxt",
     "build": "nuxt build && npm run build:copy:ssr",
-    "build:copy:ssr": "rimraf functions/ssr && mkdirp functions/ssr && cp -R .nuxt/dist functions/ssr/dist",
+    "build:copy:ssr": "cpx '.nuxt/dist/**/*.*' functions/ssr/dist -C",
     "serve": "firebase serve",
     "deploy": "firebase deploy"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nuxt": "^2.4.3"
+    "nuxt": "^2.9.2"
   },
   "devDependencies": {
-    "firebase-tools": "^6.3.1",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.3"
+    "cpx": "^1.5.0",
+    "firebase-tools": "^7.4.0"
   }
 }
