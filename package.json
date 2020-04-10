@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.12.2"
   },
   "devDependencies": {
     "@deboxsoft/cpx": "^1.5.0",
-    "firebase-tools": "^7.4.0"
+    "firebase-tools": "^8.0.2"
   }
 }
